@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROсвет</title>
+    <link rel="shortcut icon" href="img/icons8-window-96.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+<header class="header" id="header-block">
+    <section class="logo-info">
+        <div class="container">
+            <div class="logo-row">
+                <div class="logo">
+                    <img src="img/logo.png" alt="logo">
+                </div>
+                <div class="logo-main-info">
+                    <ul class="logo-text">
+                        <li class="logo-item window">оконный мир</li>
+                        <li class="logo-item location">Московское шоссе,51</li>
+                        <li class="logo-item schedule">пн-пт с 10:00 до 19:00</li>
+                        <li class="logo-item phone">8 (939) 254-25-36</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="header-navigation">
+        <div class="container">
+            <nav id="nav" class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#header-block" class="nav-link">Главная</a></li>
+                    <li class="nav-item"><a href="#service" class="nav-link">Услуги</a></li>
+                    <li class="nav-item"><a href="#discount" class="nav-link">Акции</a></li>
+                    <li class="nav-item"><a href="#review" class="nav-link">Отзывы</a></li>
+                    <li class="nav-item"><a href="#questions" class="nav-link">Вопросы</a></li>
+                </ul>
+                <button id="nav-btn" class="nav-button">
+                    <img id="nav-btn-img" src="img/open-nav.svg" alt="nav-open">
+                </button>
+            </nav>
+        </div>
+
+    </section>
+
+</header>
+<main class="main">
+    <section class="main-block" id="main-block">
+        <div class="container">
+            <div class="main-block-row">
+                <div class="main-block-text">
+                    <h1 class="main-block-title">Ремонт <br> окон любой сложности</h1>
+                    <div class="main-block-btn call parent-container">
+                        <a href="https://api.whatsapp.com/send?phone=79372031925" class="call-item">Позвонить нам</a>
+                    </div>
+                    <div class="main-block-btn review-avito parent-container">
+                        <a href="https://yandex.ru/maps/org/prosvet/211047262224/?ll=50.192808%2C53.224226&z=13"  class="review-item" target="_blank">Отзывы на Yandex</a>
+                    </div>
+                </div>
+                <div class="main-block-form">
+                    <form action="#" class="main-form" name="submit-to-google-sheet">
+                        <div class="form-title">
+                            <h3>Оформи заявку и получи скидку 10%</h3>
+                        </div>
+                        <div class="form-name">
+                            <input type="text" name="name" placeholder="Имя" autocomplete="off">
+                        </div>
+                        <div class="form-phone">
+                            <input type="number" name="phone" placeholder="Номер телефона" autocomplete="off">
+                        </div>
+                        <div class="form-button">
+                            <button type="submit">Получить скидку</button>
+                        </div>
+                        <span id="sendText"></span>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="services" id="service">
+        <div class="container">
+            <h2 class="services-title">Наши услуги</h2>
+            <div class="services-cards">
+                <div class="service-card card1">
+                    <div class="service-card-title">
+                        <h3>Замена уплотнителей</h3>
+                    </div>
+                    <div class="service-card-subtitle">
+                        <p>Замена уплотнителя: диагностика, удаление, установка, проверка.</p>
+                    </div>
+                    <div class="service-card-btn">
+                        <p>от 1000р</p>
+                    </div>
+                </div>
+                <div class="service-card card2">
+                    <div class="service-card-title">
+                        <h3>Регулировка окон</h3>
+                    </div>
+                    <div class="service-card-subtitle">
+                        <p>Регулировка окон: отпуск, подстройка, проверка.</p>
+                    </div>
+                    <div class="service-card-btn">
+                        <p>от 500р</p>
+                    </div>
+                </div>
+                <div class="service-card card3">
+                    <div class="service-card-title">
+                        <h3>Замена стеклопакетов</h3>
+                    </div>
+                    <div class="service-card-subtitle">
+                        <p>Замена стеклопакетов: извлечение, установка, уплотнение.</p>
+                    </div>
+                    <div class="service-card-btn">
+                        <p>от 2000р</p>
+                    </div>
+                </div>
+                <div class="service-card card4">
+                    <div class="service-card-title">
+                        <h3>Детские замки</h3>
+                    </div>
+                    <div class="service-card-subtitle">
+                        <p>Детские замки: безопасность, монтаж, блокировка.</p>
+                    </div>
+                    <div class="service-card-btn">
+                        <p>от 900р</p>
+                    </div>
+                </div>
+                <div class="service-card card5">
+                    <div class="service-card-title">
+                        <h3>Замена фурнитуры</h3>
+                    </div>
+                    <div class="service-card-subtitle">
+                        <p>Замена фурнитуры: демонтаж, установка, проверка.</p>
+                    </div>
+                    <div class="service-card-btn">
+                        <p>от 4800р</p>
+                    </div>
+                </div>
+                <div class="service-card card6">
+                    <div class="service-card-title">
+                        <h3>Замена ручек</h3>
+                    </div>
+                    <div class="service-card-subtitle">
+                        <p>Замена ручек: открутить, установить, проверить.</p>
+                    </div>
+                    <div class="service-card-btn">
+                        <p>от 300р</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="discount" id="discount">
+        <div class="container">
+            <h2 class="discount-title">Скидки и акции</h2>
+            <div class="discount-cards">
+                <div class="discount-card card-1">
+                    <div class="discount-card-title">
+                        <h3>Тёплый осенне-зимний подарок</h3>
+                    </div>
+                    <div class="discount-card-text">
+                        <p>При замене уплотнителя на окнах до конца месяца в <span class="purple">подарок</span>
+                            регулировка и скидка 15% на все
+                            услуги. При заказе уплотнителя более чем на 4 окна, восстановление 3-х маскитных сеток
+                            <span class="purple">БЕСПЛАТНО</span>.</p>
+                    </div>
+                    <div class="discount-btn parent-container">
+                        <a href="#main-block">Заказать</a>
+                    </div>
+                </div>
+                <div class="discount-card card-2">
+                    <div class="discount-card-title">
+                        <h3>Зимняя защита от шума и холода</h3>
+                    </div>
+                    <div class="discount-card-text">
+                        <p>МУЛЬТИФУНКЦИОНАЛЬНЫЕ СТЕКЛОПАКЕТЫ.
+                            При заказе мульти-стеклопакетов до 15 числа, монтаж и замена ручки в <span class="purple">ПОДАРОК</span>
+                            и <span class="purple">скидка 10%</span>
+                            на любой материал.</p>
+                    </div>
+                    <div class="discount-btn parent-container">
+                        <a href="#main-block">Заказать</a>
+                    </div>
+                </div>
+                <div class="discount-card card-3">
+                    <div class="discount-card-title">
+                        <h3>Скидки для пенсионеров</h3>
+                    </div>
+                    <div class="discount-card-text">
+                        <p>Получите эксклюзивную <span class="purple">скидку 25%</span> на любые работы по ремонту окон.
+                            Пусть ваш дом будет теплым и уютным без лишних забот.</p>
+                    </div>
+                    <div class="discount-btn parent-container">
+                        <a href="#main-block">Заказать</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="action" id="action">
+        <div class="container">
+            <div class="action-main-title">
+                <h3>Успей заказать ремонт окон</h3>
+            </div>
+            <div class="action-main-text">
+                <p>Получи москитные сетки и консультацию в <span class="red">подарок</span></p>
+            </div>
+            <div class="action-row">
+                <div class="action-main-btn parent-container">
+                    <a href="#main-block" class="action-btn-item">Получить</a>
+                </div>
+                <div class="action-timer">
+                    <span class="days"> 5 </span> :<span class="hours">12 </span>: <span class="minutes">24 </span>: <span class="seconds"> 57</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="problem" id="problem">
+        <div class="container">
+            <div class="problem-title">
+                <h3>Мы решим все проблемы с окнами</h3>
+            </div>
+            <div class="problem-cards">
+                <div class="problem-card problem-card1">
+                    <div class="problem-card-img">
+                        <img src="img/card1.svg" alt="">
+                    </div>
+                    <div class="problem-card-title">
+                        <p>Проблемы с геометрией</p>
+                    </div>
+                </div>
+                <div class="problem-card problem-card2">
+                    <div class="problem-card-img">
+                        <img src="img/card2.svg" alt="">
+                    </div>
+                    <div class="problem-card-title">
+                        <p>Шумоизоляция окна</p>
+                    </div>
+                </div>
+                <div class="problem-card problem-card3">
+                    <div class="problem-card-img">
+                        <img src="img/card3.svg" alt="">
+                    </div>
+                    <div class="problem-card-title">
+                        <p>Продувание <br> окна</p>
+                    </div>
+                </div>
+                <div class="problem-card problem-card4">
+                    <div class="problem-card-img">
+                        <img src="img/card4.svg" alt="">
+                    </div>
+                    <div class="problem-card-title">
+                        <p>Запотевание стекла</p>
+                    </div>
+                </div>
+                <div class="problem-card problem-card5">
+                    <div class="problem-card-img">
+                        <img src="img/card5.svg" alt="">
+                    </div>
+                    <div class="problem-card-title">
+                        <p>Неполадки с фурнитурой</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="review" id="review">
+        <div class="container">
+            <div class="review-title">
+                <h3>Отзывы</h3>
+            </div>
+            <div class="review-row">
+                <div class="review-main mySwiper">
+                    <div class="slider swiper-wrapper">
+                        <div class="slide swiper-slide">
+                            <!-- Контент первого слайда -->
+                            <div class="review-main-paragraph">
+                                <p>"Обращался в компанию PROсвет по поводу комплексного обслуживания пластиковых окон!
+                                    Ребята
+                                    приехали быстро, сделали все качественно, за собой оставили идеальный порядок!
+                                    Спасибо
+                                    Вам
+                                    большое!
+                                    Всем рекомендую"</p>
+                            </div>
+                            <div class="review-main-row">
+                                <div class="review-main-img">
+                                    <img src="img/review1.png" alt="">
+                                </div>
+                                <div class="review-main-name">
+                                    <div class="review-name">
+                                        <h4>Александр М.</h4>
+                                    </div>
+                                    <div class="review-stars-img">
+                                        <img src="img/stars.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slide swiper-slide">
+                            <!-- Контент второго слайда -->
+                            <div class="review-main-paragraph">
+                                <p>"Хороша компания с ответсвенными сотрудниками. Сначала проконсультировали по телефону,
+                                    а
+                                    на следующий день приехал мастер и выпонил работу по замене уплотнителя и
+                                    регулировки
+                                    окон. Выпоненной работой доволен!! Ребятам огромное спасибо и успехов!!)"</p>
+                            </div>
+                            <div class="review-main-row">
+                                <div class="review-main-img">
+                                    <img src="img/review2.png" alt="">
+                                </div>
+                                <div class="review-main-name">
+                                    <div class="review-name">
+                                        <h4>Николай Белов</h4>
+                                    </div>
+                                    <div class="review-stars-img">
+                                        <img src="img/stars.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slide swiper-slide">
+                            <!-- Контент второго слайда -->
+                            <div class="review-main-paragraph">
+                                <p>"Надёжная компания с добросовестными сотрудниками. Сначала приехал менеджер всё
+                                    подробно объяснил, потом приехал мастер в удобное время, проделал качественно свою
+                                    работу без навязывания дополнительных услуг, что немаловажно в наше время!
+                                    Рекомендую Proсвет в качестве надёжных услуг по ремонту окон."</p>
+                            </div>
+                            <div class="review-main-row">
+                                <div class="review-main-img">
+                                    <img src="img/review%203.png" alt="">
+                                </div>
+                                <div class="review-main-name">
+                                    <div class="review-name">
+                                        <h4>Наталья Частухина</h4>
+                                    </div>
+                                    <div class="review-stars-img">
+                                        <img src="img/stars.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next nav-btn"></div>
+                    <div class="swiper-button-prev nav-btn"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="review-img">
+                    <img src="img/instagram.png" alt="">
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="questions" id="questions">
+        <div class="container">
+            <div class="question-title">
+                <h2>Часто спрашивают</h2>
+            </div>
+            <div class="question-cards">
+                <div class="question-card">
+                    <div class="question-card-title">
+                        <p> Почему мои окна запотевают?</p>
+                    </div>
+                    <div class="question-card-response">
+                        <p> Запотевание окон может быть вызвано недостаточной вентиляцией. Рекомендуется проветривать
+                            помещение и устанавливать уплотнители для предотвращения проникновения влаги.</p>
+                    </div>
+                </div>
+                <div class="question-card">
+                    <div class="question-card-title">
+                        <p> Какие материалы лучше всего использовать для утепления окон?</p>
+                    </div>
+                    <div class="question-card-response">
+                        <p> Для утепления окон эффективными материалами являются термостекло, утеплители и уплотнители.
+                            Они помогут снизить теплопотери и повысить энергоэффективность.</p>
+                    </div>
+                </div>
+                <div class="question-card">
+                    <div class="question-card-title">
+                        <p> Что делать, если у моих окон есть трещины или щели?</p>
+                    </div>
+                    <div class="question-card-response">
+                        <p> Трещины или щели в окнах могут привести к утечкам тепла. Используйте герметик или замените
+                            уплотнители, чтобы избежать потери тепла и энергосбережения.</p>
+                    </div>
+                </div>
+                <div class="question-card">
+                    <div class="question-card-title">
+                        <p> Как часто следует проводить техническое обслуживание окон?</p>
+                    </div>
+                    <div class="question-card-response">
+                        <p> Регулярное техническое обслуживание окон рекомендуется проводить раз в год. Это включает в
+                            себя проверку уплотнителей, замену сломанных или изношенных деталей, а также чистку
+                            механизмов.</p>
+                    </div>
+                </div>
+                <div class="question-card">
+                    <div class="question-card-title">
+                        <p> Как заказать ремонт?</p>
+                    </div>
+                    <div class="question-card-response">
+                        <p> Чтобы вызвать мастера, оставьте заявку на сайте. Операторы свяжутся с вами и
+                            проконсультируют вас по интересующим вопросам и озвучат цены на услуги.</p>
+                    </div>
+                </div>
+                <div class="question-card">
+                    <div class="question-card-title">
+                        <p> Как узнать, когда мои окна требуют замены?</p>
+                    </div>
+                    <div class="question-card-response">
+                        <p> Признаки необходимости замены окон включают повышенный шум, трудности с открыванием и
+                            закрыванием, а также увеличенные теплопотери. Если окна старые или повреждены, рассмотрите
+                            вариант их замены.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <div class="container">
+        <div class="footer-row">
+            <div class="logo">
+                <img src="img/logo.png" alt="logo">
+            </div>
+            <div class="logo-main-info">
+                <ul class="logo-text">
+                    <li class="logo-item window">оконный мир</li>
+                    <li class="logo-item location">Московское шоссе,51</li>
+                    <li class="logo-item schedule">пн-пт с 10:00 до 19:00</li>
+                    <li class="logo-item phone">8 (939) 254-25-36</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="swiper-bundle.min.js"></script>
+<script defer src="main.js"></script>
+</body>
+</html>
