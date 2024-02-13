@@ -49,6 +49,12 @@ input[type="number"] {
     cursor: pointer;
 }
 
+#sendText {
+    padding-top: 15px;
+    font-size: 20px;
+    color: black;
+}
+
 /*
 Header
  */

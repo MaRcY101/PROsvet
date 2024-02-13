@@ -5,15 +5,21 @@ window.addEventListener('DOMContentLoaded', () => {
     const sendText = document.querySelector("#sendText")
     form.addEventListener('submit', e => {
         e.preventDefault()
+        sendText.innerHTML = "Идет отправка данных...";
         fetch(scriptURL, { method: 'POST', body: new FormData(form)})
             .then(response =>{
-                sendText.innerHTML = "Ваши данные успешны отправлены , наши операторы скоро свяжутся с вами"
+                sendText.innerHTML = "Ваши данные успешны отправлены , мы скоро свяжемся с вами"
                 setTimeout(function (){
                     sendText.innerHTML = ""
-                }, 4000);
+                }, 3000);
                 form.reset();
             })
-            .catch(error => console.error('Error!', error.message))
+            .catch(error => {
+                sendText.innerHTML = "Что-то пошло не так";setTimeout(function (){
+                    sendText.innerHTML = ""
+                }, 2000);
+                form.reset();
+            })
     })
 
 
